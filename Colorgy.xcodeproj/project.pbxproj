@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B42BD54C07B3B1592F5E37B /* libPods-Colorgy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC0F937DD2ECDBDEB64D28 /* libPods-Colorgy.a */; };
 		63E0A2841AD2971200FF98BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2831AD2971200FF98BC /* AppDelegate.swift */; };
 		63E0A2861AD2971200FF98BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2851AD2971200FF98BC /* ViewController.swift */; };
 		63E0A2891AD2971200FF98BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A2871AD2971200FF98BC /* Main.storyboard */; };
 		63E0A28B1AD2971200FF98BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A28A1AD2971200FF98BC /* Images.xcassets */; };
 		63E0A28E1AD2971200FF98BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A28C1AD2971200FF98BC /* LaunchScreen.xib */; };
 		63E0A29A1AD2971200FF98BC /* ColorgyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2991AD2971200FF98BC /* ColorgyTests.swift */; };
+		63E0A2A41AD298E100FF98BC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2A31AD298E100FF98BC /* Message.swift */; };
+		63E0A2A71AD298ED00FF98BC /* CourseChatRoomSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2A51AD298ED00FF98BC /* CourseChatRoomSelect.swift */; };
+		63E0A2A81AD298ED00FF98BC /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2A61AD298ED00FF98BC /* FacebookLoginViewController.swift */; };
+		63E0A2AE1AD29A2500FF98BC /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A2AB1AD29A2500FF98BC /* 2.png */; };
+		63E0A2AF1AD29A2500FF98BC /* ano.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A2AC1AD29A2500FF98BC /* ano.png */; };
+		63E0A2B01AD29A2500FF98BC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A2AD1AD29A2500FF98BC /* 1.png */; };
+		63E0A2BC1AD2BA4500FF98BC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0A2BB1AD2BA4500FF98BC /* FacebookSDK.framework */; };
+		63E0A32C1AD2F3AC00FF98BC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0A32A1AD2F3AC00FF98BC /* FBSDKCoreKit.framework */; };
+		63E0A32D1AD2F3AC00FF98BC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0A32B1AD2F3AC00FF98BC /* FBSDKLoginKit.framework */; };
+		967B3440B11EA3BBB0CCB753 /* libPods-ColorgyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E12E18035215DEF176F2F83 /* libPods-ColorgyTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E12E18035215DEF176F2F83 /* libPods-ColorgyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorgyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E0A27E1AD2971200FF98BC /* Colorgy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorgy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E0A2821AD2971200FF98BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E0A2831AD2971200FF98BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +48,20 @@
 		63E0A2931AD2971200FF98BC /* ColorgyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorgyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E0A2981AD2971200FF98BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E0A2991AD2971200FF98BC /* ColorgyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorgyTests.swift; sourceTree = "<group>"; };
+		63E0A2A31AD298E100FF98BC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		63E0A2A51AD298ED00FF98BC /* CourseChatRoomSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseChatRoomSelect.swift; sourceTree = "<group>"; };
+		63E0A2A61AD298ED00FF98BC /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
+		63E0A2AB1AD29A2500FF98BC /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		63E0A2AC1AD29A2500FF98BC /* ano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ano.png; sourceTree = "<group>"; };
+		63E0A2AD1AD29A2500FF98BC /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		63E0A2BB1AD2BA4500FF98BC /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		63E0A32A1AD2F3AC00FF98BC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		63E0A32B1AD2F3AC00FF98BC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6B1D4FB616C2725D85F419CF /* Pods-Colorgy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorgy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Colorgy/Pods-Colorgy.debug.xcconfig"; sourceTree = "<group>"; };
+		96A1DA5E67417F2480AA08F9 /* Pods-ColorgyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorgyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorgyTests/Pods-ColorgyTests.release.xcconfig"; sourceTree = "<group>"; };
+		CCDE80048541B6EAEEFA92EC /* Pods-Colorgy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorgy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Colorgy/Pods-Colorgy.release.xcconfig"; sourceTree = "<group>"; };
+		E0241FEAC845EE5D59923408 /* Pods-ColorgyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorgyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorgyTests/Pods-ColorgyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7FC0F937DD2ECDBDEB64D28 /* libPods-Colorgy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Colorgy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B42BD54C07B3B1592F5E37B /* libPods-Colorgy.a in Frameworks */,
+				63E0A32C1AD2F3AC00FF98BC /* FBSDKCoreKit.framework in Frameworks */,
+				63E0A32D1AD2F3AC00FF98BC /* FBSDKLoginKit.framework in Frameworks */,
+				63E0A2BC1AD2BA4500FF98BC /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967B3440B11EA3BBB0CCB753 /* libPods-ColorgyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +90,14 @@
 		63E0A2751AD2971200FF98BC = {
 			isa = PBXGroup;
 			children = (
+				63E0A2AB1AD29A2500FF98BC /* 2.png */,
+				63E0A2AC1AD29A2500FF98BC /* ano.png */,
+				63E0A2AD1AD29A2500FF98BC /* 1.png */,
 				63E0A2801AD2971200FF98BC /* Colorgy */,
 				63E0A2961AD2971200FF98BC /* ColorgyTests */,
 				63E0A27F1AD2971200FF98BC /* Products */,
+				DA53500EE90218547E582DD2 /* Pods */,
+				F06A20D2F19346C6ACEE65D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +115,9 @@
 			children = (
 				63E0A2831AD2971200FF98BC /* AppDelegate.swift */,
 				63E0A2851AD2971200FF98BC /* ViewController.swift */,
+				63E0A2A31AD298E100FF98BC /* Message.swift */,
+				63E0A2A51AD298ED00FF98BC /* CourseChatRoomSelect.swift */,
+				63E0A2A61AD298ED00FF98BC /* FacebookLoginViewController.swift */,
 				63E0A2871AD2971200FF98BC /* Main.storyboard */,
 				63E0A28A1AD2971200FF98BC /* Images.xcassets */,
 				63E0A28C1AD2971200FF98BC /* LaunchScreen.xib */,
@@ -112,6 +151,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DA53500EE90218547E582DD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D4FB616C2725D85F419CF /* Pods-Colorgy.debug.xcconfig */,
+				CCDE80048541B6EAEEFA92EC /* Pods-Colorgy.release.xcconfig */,
+				E0241FEAC845EE5D59923408 /* Pods-ColorgyTests.debug.xcconfig */,
+				96A1DA5E67417F2480AA08F9 /* Pods-ColorgyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F06A20D2F19346C6ACEE65D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63E0A32A1AD2F3AC00FF98BC /* FBSDKCoreKit.framework */,
+				63E0A32B1AD2F3AC00FF98BC /* FBSDKLoginKit.framework */,
+				63E0A2BB1AD2BA4500FF98BC /* FacebookSDK.framework */,
+				E7FC0F937DD2ECDBDEB64D28 /* libPods-Colorgy.a */,
+				4E12E18035215DEF176F2F83 /* libPods-ColorgyTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63E0A29D1AD2971200FF98BC /* Build configuration list for PBXNativeTarget "Colorgy" */;
 			buildPhases = (
+				4DB21E8FC8EBE94DF118BD56 /* Check Pods Manifest.lock */,
 				63E0A27A1AD2971200FF98BC /* Sources */,
 				63E0A27B1AD2971200FF98BC /* Frameworks */,
 				63E0A27C1AD2971200FF98BC /* Resources */,
+				7B8EAA938A21C92B5EB4B834 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63E0A2A01AD2971200FF98BC /* Build configuration list for PBXNativeTarget "ColorgyTests" */;
 			buildPhases = (
+				D3E872287EFBAD76506EF2A6 /* Check Pods Manifest.lock */,
 				63E0A28F1AD2971200FF98BC /* Sources */,
 				63E0A2901AD2971200FF98BC /* Frameworks */,
 				63E0A2911AD2971200FF98BC /* Resources */,
+				3CA73288039D15A0CEBB4D30 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +260,9 @@
 			files = (
 				63E0A2891AD2971200FF98BC /* Main.storyboard in Resources */,
 				63E0A28E1AD2971200FF98BC /* LaunchScreen.xib in Resources */,
+				63E0A2AF1AD29A2500FF98BC /* ano.png in Resources */,
+				63E0A2B01AD29A2500FF98BC /* 1.png in Resources */,
+				63E0A2AE1AD29A2500FF98BC /* 2.png in Resources */,
 				63E0A28B1AD2971200FF98BC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,13 +276,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CA73288039D15A0CEBB4D30 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorgyTests/Pods-ColorgyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DB21E8FC8EBE94DF118BD56 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B8EAA938A21C92B5EB4B834 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Colorgy/Pods-Colorgy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E872287EFBAD76506EF2A6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63E0A27A1AD2971200FF98BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E0A2A41AD298E100FF98BC /* Message.swift in Sources */,
 				63E0A2861AD2971200FF98BC /* ViewController.swift in Sources */,
+				63E0A2A81AD298ED00FF98BC /* FacebookLoginViewController.swift in Sources */,
 				63E0A2841AD2971200FF98BC /* AppDelegate.swift in Sources */,
+				63E0A2A71AD298ED00FF98BC /* CourseChatRoomSelect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,26 +469,45 @@
 		};
 		63E0A29E1AD2971200FF98BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B1D4FB616C2725D85F419CF /* Pods-Colorgy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Colorgy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ./Header.h;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		63E0A29F1AD2971200FF98BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCDE80048541B6EAEEFA92EC /* Pods-Colorgy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Colorgy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ./Header.h;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		63E0A2A11AD2971200FF98BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0241FEAC845EE5D59923408 /* Pods-ColorgyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -373,6 +527,7 @@
 		};
 		63E0A2A21AD2971200FF98BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A1DA5E67417F2480AA08F9 /* Pods-ColorgyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -405,6 +560,7 @@
 				63E0A29F1AD2971200FF98BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63E0A2A01AD2971200FF98BC /* Build configuration list for PBXNativeTarget "ColorgyTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +569,7 @@
 				63E0A2A21AD2971200FF98BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
