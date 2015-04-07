@@ -23,6 +23,8 @@
 		63E0A2BC1AD2BA4500FF98BC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0A2BB1AD2BA4500FF98BC /* FacebookSDK.framework */; };
 		63E0A32C1AD2F3AC00FF98BC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0A32A1AD2F3AC00FF98BC /* FBSDKCoreKit.framework */; };
 		63E0A32D1AD2F3AC00FF98BC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0A32B1AD2F3AC00FF98BC /* FBSDKLoginKit.framework */; };
+		63E0A32F1AD3CC5C00FF98BC /* FBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A32E1AD3CC5C00FF98BC /* FBLoginViewController.swift */; };
+		63E0A3311AD3CD8900FF98BC /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A3301AD3CD8900FF98BC /* ChatRoomViewController.swift */; };
 		967B3440B11EA3BBB0CCB753 /* libPods-ColorgyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E12E18035215DEF176F2F83 /* libPods-ColorgyTests.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		63E0A2BB1AD2BA4500FF98BC /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		63E0A32A1AD2F3AC00FF98BC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		63E0A32B1AD2F3AC00FF98BC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		63E0A32E1AD3CC5C00FF98BC /* FBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
+		63E0A3301AD3CD8900FF98BC /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		6B1D4FB616C2725D85F419CF /* Pods-Colorgy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorgy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Colorgy/Pods-Colorgy.debug.xcconfig"; sourceTree = "<group>"; };
 		96A1DA5E67417F2480AA08F9 /* Pods-ColorgyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorgyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorgyTests/Pods-ColorgyTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCDE80048541B6EAEEFA92EC /* Pods-Colorgy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorgy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Colorgy/Pods-Colorgy.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +122,9 @@
 				63E0A2A31AD298E100FF98BC /* Message.swift */,
 				63E0A2A51AD298ED00FF98BC /* CourseChatRoomSelect.swift */,
 				63E0A2A61AD298ED00FF98BC /* FacebookLoginViewController.swift */,
+				63E0A32E1AD3CC5C00FF98BC /* FBLoginViewController.swift */,
 				63E0A2871AD2971200FF98BC /* Main.storyboard */,
+				63E0A3301AD3CD8900FF98BC /* ChatRoomViewController.swift */,
 				63E0A28A1AD2971200FF98BC /* Images.xcassets */,
 				63E0A28C1AD2971200FF98BC /* LaunchScreen.xib */,
 				63E0A2811AD2971200FF98BC /* Supporting Files */,
@@ -344,8 +350,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E0A3311AD3CD8900FF98BC /* ChatRoomViewController.swift in Sources */,
 				63E0A2A41AD298E100FF98BC /* Message.swift in Sources */,
 				63E0A2861AD2971200FF98BC /* ViewController.swift in Sources */,
+				63E0A32F1AD3CC5C00FF98BC /* FBLoginViewController.swift in Sources */,
 				63E0A2A81AD298ED00FF98BC /* FacebookLoginViewController.swift in Sources */,
 				63E0A2841AD2971200FF98BC /* AppDelegate.swift in Sources */,
 				63E0A2A71AD298ED00FF98BC /* CourseChatRoomSelect.swift in Sources */,
@@ -472,6 +480,7 @@
 			baseConfigurationReference = 6B1D4FB616C2725D85F419CF /* Pods-Colorgy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,6 +500,7 @@
 			baseConfigurationReference = CCDE80048541B6EAEEFA92EC /* Pods-Colorgy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

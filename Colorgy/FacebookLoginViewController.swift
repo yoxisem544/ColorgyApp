@@ -64,7 +64,11 @@ class FacebookLoginViewController: UIViewController, FBLoginViewDelegate {
             cvc.setupUserInfo(self.profilePhoto)
 //            vc.performLogin(self.profilePhoto)
 //            println(self.profilePhoto)
+        } else {
+            println("doesn't push")
         }
+        
+        println("perform segue")
     }
     
 }

@@ -1,14 +1,14 @@
 //
-//  CourseChatRoomSelect.swift
-//  SWTJSQ
+//  ChatRoomViewController.swift
+//  Colorgy
 //
-//  Created by David on 2015/3/12.
+//  Created by David on 2015/4/7.
 //  Copyright (c) 2015年 David. All rights reserved.
 //
 
 import UIKit
 
-class CourseChatRoomSelect: UITableViewController, UITableViewDelegate, UITableViewDataSource {
+class ChatRoomViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableview: UITableView!
     
@@ -92,3 +92,4 @@ class CourseChatRoomSelect: UITableViewController, UITableViewDelegate, UITableV
         return self.chatRoomList.count
     }
 }
+

@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="-521" y="-502"/>
         </scene>
-        <!--Facebook Login View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="3TJ-cT-p6s">
             <objects>
-                <viewController id="iho-5R-MJM" customClass="FacebookLoginViewController" customModule="Colorgy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iho-5R-MJM" customClass="FBLoginViewController" customModule="Colorgy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YNk-43-yeO"/>
                         <viewControllerLayoutGuide type="bottom" id="IzN-Pb-BDA"/>
@@ -35,17 +35,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="rvz-3m-zNt"/>
                     <connections>
-                        <segue destination="tTP-ZE-VRB" kind="push" identifier="totableview" id="adu-pf-g24"/>
+                        <segue destination="tTP-ZE-VRB" kind="push" identifier="toChatSelect" id="ky8-2a-lqf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T7M-iN-Bc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="161" y="-512"/>
         </scene>
-        <!--Course Chat Room Select-->
+        <!--Chat Room View Controller-->
         <scene sceneID="F5y-Q1-Cjx">
             <objects>
-                <tableViewController id="tTP-ZE-VRB" customClass="CourseChatRoomSelect" customModule="Colorgy" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="tTP-ZE-VRB" customClass="ChatRoomViewController" customModule="Colorgy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aID-6q-mcl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
