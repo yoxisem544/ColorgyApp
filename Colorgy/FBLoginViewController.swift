@@ -11,6 +11,7 @@ import UIKit
 class FBLoginViewController: UIViewController, FBLoginViewDelegate {
     
     var userId: NSString!
+    var ticker: NSTimer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +20,34 @@ class FBLoginViewController: UIViewController, FBLoginViewDelegate {
         var loginview = FBLoginView()
         loginview.center = CGPointMake(self.view.center.x, self.view.center.y)
         self.view.addSubview(loginview)
+
+        
+    }
+    override func viewDidAppear(animated: Bool) {
+        println("appear")
+        ticker = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "trackLogin", userInfo: nil, repeats: true)
+    }
+    
+    func trackLogin() {
+        println("tick")
         
         if FBSession.activeSession().isOpen {
             FBRequest.requestForMe().startWithCompletionHandler{(connection:FBRequestConnection!, result:AnyObject!, error:NSError!) -> Void in
                 
-                var resultDic = result as NSDictionary
-                println("OK get! \(resultDic)")
-                println(resultDic["id"]!)
-                self.userId = resultDic["id"]! as NSString
-                self.performSegueWithIdentifier("toChatSelect", sender: self)
+                if result != nil {
+                    var resultDic = result as NSDictionary
+                    println("OK get! \(resultDic)")
+                    println(resultDic["id"]!)
+                    self.userId = resultDic["id"]! as NSString
+                    self.performSegueWithIdentifier("toChatSelect", sender: self)
+                    self.ticker.invalidate()
+                } else {
+                    println("network problem....")
+                    FBSession.activeSession().close()
+                }
             }
+        } else {
+            println("not login")
         }
     }
     

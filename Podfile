@@ -4,7 +4,6 @@
 target 'Colorgy' do
   pod 'JSQMessagesViewController'
   pod 'Firebase', '>= 2.2.0'
-  pod 'MSCollectionViewCalendarLayout'
 end
 
 target 'ColorgyTests' do

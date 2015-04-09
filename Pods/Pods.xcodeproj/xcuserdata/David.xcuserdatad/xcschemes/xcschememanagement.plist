@@ -4,22 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Colorgy-CupertinoYankee.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Colorgy-JSQMessagesViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Colorgy-JSQSystemSoundPlayer.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Colorgy-MSCollectionViewCalendarLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,42 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11B00D4AEE0280EA1717DB86</key>
+		<key>10EEA47AF18EA61BA172C9E7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FBDE1ED6C0A29E2CFFE4072</key>
+		<key>444429A066A08DF3B46461BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>28BD4359C770B2B5D7AD6FB4</key>
+		<key>455CB487EFC91A661C767EF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>653F091616D84F650DD22784</key>
+		<key>4E09FB1437EB815673106C5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6CD141B772F5DDA615F07E18</key>
+		<key>AC0942F6EE545FD44564BE35</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7514BA71F8E6D584F738F257</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9540995C2163E08682544FBB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F0804BCD82CC935C26199DBA</key>
+		<key>EC3BFC38C4E2B84FFA4AFEB1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

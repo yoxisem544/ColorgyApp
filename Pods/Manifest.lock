@@ -1,22 +1,16 @@
 PODS:
-  - CupertinoYankee (0.1.1)
   - Firebase (2.2.0)
   - JSQMessagesViewController (7.0.0):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
-  - MSCollectionViewCalendarLayout (0.1.3):
-    - CupertinoYankee (~> 0.1)
 
 DEPENDENCIES:
   - Firebase (>= 2.2.0)
   - JSQMessagesViewController
-  - MSCollectionViewCalendarLayout
 
 SPEC CHECKSUMS:
-  CupertinoYankee: 742ab22e47518167d0c78d2eaa5aed5b6e26af3b
   Firebase: e5f9cf72c72a9fdaf7e136012b6c52a263a23ca7
   JSQMessagesViewController: 9fd7e9ac96e9fc91f2deca86928e2cc916aeebaa
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
-  MSCollectionViewCalendarLayout: fba6fefdb3a340cb3e4f10725c6b3a530e6f6817
 
 COCOAPODS: 0.36.3

@@ -15,16 +15,13 @@
 		63E0A28E1AD2971200FF98BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A28C1AD2971200FF98BC /* LaunchScreen.xib */; };
 		63E0A29A1AD2971200FF98BC /* ColorgyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2991AD2971200FF98BC /* ColorgyTests.swift */; };
 		63E0A2A41AD298E100FF98BC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2A31AD298E100FF98BC /* Message.swift */; };
-		63E0A2A71AD298ED00FF98BC /* CourseChatRoomSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2A51AD298ED00FF98BC /* CourseChatRoomSelect.swift */; };
-		63E0A2A81AD298ED00FF98BC /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2A61AD298ED00FF98BC /* FacebookLoginViewController.swift */; };
 		63E0A2AE1AD29A2500FF98BC /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A2AB1AD29A2500FF98BC /* 2.png */; };
 		63E0A2AF1AD29A2500FF98BC /* ano.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A2AC1AD29A2500FF98BC /* ano.png */; };
 		63E0A2B01AD29A2500FF98BC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A2AD1AD29A2500FF98BC /* 1.png */; };
 		63E0A2BC1AD2BA4500FF98BC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0A2BB1AD2BA4500FF98BC /* FacebookSDK.framework */; };
-		63E0A32C1AD2F3AC00FF98BC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0A32A1AD2F3AC00FF98BC /* FBSDKCoreKit.framework */; };
-		63E0A32D1AD2F3AC00FF98BC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0A32B1AD2F3AC00FF98BC /* FBSDKLoginKit.framework */; };
 		63E0A32F1AD3CC5C00FF98BC /* FBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A32E1AD3CC5C00FF98BC /* FBLoginViewController.swift */; };
 		63E0A3311AD3CD8900FF98BC /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A3301AD3CD8900FF98BC /* ChatRoomViewController.swift */; };
+		63E0A3671AD5866800FF98BC /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A3661AD5866800FF98BC /* CalendarViewController.swift */; };
 		967B3440B11EA3BBB0CCB753 /* libPods-ColorgyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E12E18035215DEF176F2F83 /* libPods-ColorgyTests.a */; };
 /* End PBXBuildFile section */
 
@@ -51,16 +48,13 @@
 		63E0A2981AD2971200FF98BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E0A2991AD2971200FF98BC /* ColorgyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorgyTests.swift; sourceTree = "<group>"; };
 		63E0A2A31AD298E100FF98BC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		63E0A2A51AD298ED00FF98BC /* CourseChatRoomSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseChatRoomSelect.swift; sourceTree = "<group>"; };
-		63E0A2A61AD298ED00FF98BC /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
 		63E0A2AB1AD29A2500FF98BC /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		63E0A2AC1AD29A2500FF98BC /* ano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ano.png; sourceTree = "<group>"; };
 		63E0A2AD1AD29A2500FF98BC /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		63E0A2BB1AD2BA4500FF98BC /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		63E0A32A1AD2F3AC00FF98BC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		63E0A32B1AD2F3AC00FF98BC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		63E0A32E1AD3CC5C00FF98BC /* FBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBLoginViewController.swift; sourceTree = "<group>"; };
 		63E0A3301AD3CD8900FF98BC /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		63E0A3661AD5866800FF98BC /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		6B1D4FB616C2725D85F419CF /* Pods-Colorgy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorgy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Colorgy/Pods-Colorgy.debug.xcconfig"; sourceTree = "<group>"; };
 		96A1DA5E67417F2480AA08F9 /* Pods-ColorgyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorgyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorgyTests/Pods-ColorgyTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCDE80048541B6EAEEFA92EC /* Pods-Colorgy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorgy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Colorgy/Pods-Colorgy.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,8 +68,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B42BD54C07B3B1592F5E37B /* libPods-Colorgy.a in Frameworks */,
-				63E0A32C1AD2F3AC00FF98BC /* FBSDKCoreKit.framework in Frameworks */,
-				63E0A32D1AD2F3AC00FF98BC /* FBSDKLoginKit.framework in Frameworks */,
 				63E0A2BC1AD2BA4500FF98BC /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,10 +112,9 @@
 				63E0A2831AD2971200FF98BC /* AppDelegate.swift */,
 				63E0A2851AD2971200FF98BC /* ViewController.swift */,
 				63E0A2A31AD298E100FF98BC /* Message.swift */,
-				63E0A2A51AD298ED00FF98BC /* CourseChatRoomSelect.swift */,
-				63E0A2A61AD298ED00FF98BC /* FacebookLoginViewController.swift */,
 				63E0A32E1AD3CC5C00FF98BC /* FBLoginViewController.swift */,
 				63E0A2871AD2971200FF98BC /* Main.storyboard */,
+				63E0A3661AD5866800FF98BC /* CalendarViewController.swift */,
 				63E0A3301AD3CD8900FF98BC /* ChatRoomViewController.swift */,
 				63E0A28A1AD2971200FF98BC /* Images.xcassets */,
 				63E0A28C1AD2971200FF98BC /* LaunchScreen.xib */,
@@ -171,8 +162,6 @@
 		F06A20D2F19346C6ACEE65D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				63E0A32A1AD2F3AC00FF98BC /* FBSDKCoreKit.framework */,
-				63E0A32B1AD2F3AC00FF98BC /* FBSDKLoginKit.framework */,
 				63E0A2BB1AD2BA4500FF98BC /* FacebookSDK.framework */,
 				E7FC0F937DD2ECDBDEB64D28 /* libPods-Colorgy.a */,
 				4E12E18035215DEF176F2F83 /* libPods-ColorgyTests.a */,
@@ -350,13 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E0A3671AD5866800FF98BC /* CalendarViewController.swift in Sources */,
 				63E0A3311AD3CD8900FF98BC /* ChatRoomViewController.swift in Sources */,
 				63E0A2A41AD298E100FF98BC /* Message.swift in Sources */,
 				63E0A2861AD2971200FF98BC /* ViewController.swift in Sources */,
 				63E0A32F1AD3CC5C00FF98BC /* FBLoginViewController.swift in Sources */,
-				63E0A2A81AD298ED00FF98BC /* FacebookLoginViewController.swift in Sources */,
 				63E0A2841AD2971200FF98BC /* AppDelegate.swift in Sources */,
-				63E0A2A71AD298ED00FF98BC /* CourseChatRoomSelect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
