@@ -21,7 +21,7 @@ class FBLoginViewController: UIViewController, FBLoginViewDelegate {
         loginview.center = CGPointMake(self.view.center.x, self.view.center.y)
         self.view.addSubview(loginview)
 
-        
+        self.navigationController?.navigationBarHidden = true
     }
     override func viewDidAppear(animated: Bool) {
         println("appear")
@@ -35,10 +35,10 @@ class FBLoginViewController: UIViewController, FBLoginViewDelegate {
             FBRequest.requestForMe().startWithCompletionHandler{(connection:FBRequestConnection!, result:AnyObject!, error:NSError!) -> Void in
                 
                 if result != nil {
-                    var resultDic = result as NSDictionary
+                    var resultDic = result as! NSDictionary
                     println("OK get! \(resultDic)")
                     println(resultDic["id"]!)
-                    self.userId = resultDic["id"]! as NSString
+                    self.userId = resultDic["id"]! as! NSString
                     self.performSegueWithIdentifier("toChatSelect", sender: self)
                     self.ticker.invalidate()
                 } else {
@@ -53,9 +53,10 @@ class FBLoginViewController: UIViewController, FBLoginViewDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toChatSelect" {
-            var desView = segue.destinationViewController as ChatRoomViewController
-            desView.setupUserInfo(self.userId)
-            println("push, setup login info")
+//            var desView = segue.destinationViewController as! ChatRoomViewController
+//            desView.setupUserInfo(self.userId as String)
+//            println("push, setup login info")
+            println("testing tab view")
         }
     }
 }

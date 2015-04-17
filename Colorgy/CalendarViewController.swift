@@ -8,22 +8,41 @@
 
 import UIKit
 
-class CalendarViewController: UIViewController {
+class CalendarViewController: UIViewController, UIScrollViewDelegate {
     
     var calendarView: UIScrollView!
     
+    var screenWidth: CGFloat!
+    var screenHeight: CGFloat!
+    var columnWidht: CGFloat!
+    var columnHeight: CGFloat!
+    var cellWidth: CGFloat!
+    var cellHeight: CGFloat!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("calendar view did load")
         
-        self.calendarView = UIScrollView(frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height))
-        self.calendarView.backgroundColor = UIColor.redColor()
+        screenWidth = self.view.frame.width
+        screenHeight = self.view.frame.height
         
-        self.calendarView.contentSize = CGSizeMake(self.calendarView.frame.width*5, self.calendarView.frame.height)
-        var view = UIView(frame: CGRectMake(10.0, 10.0, 50, 50))
-        view.backgroundColor = UIColor.blueColor()
+        cellWidth = screenWidth
+        cellHeight = screenHeight*3
         
+        calendarView = UIScrollView(frame: CGRectMake(0.0, 0.0, screenWidth, screenHeight))
+        calendarView.contentSize = CGSizeMake(screenWidth*7, screenHeight)
+        calendarView.pagingEnabled = true
+        
+        for i in 0...6 {
+            var position = CGFloat(i)*screenWidth
+            var view = UIScrollView(frame: CGRectMake(position, 0.0, screenWidth, screenHeight))
+            view.contentSize = CGSizeMake(cellWidth, cellHeight)
+            view.backgroundColor = UIColor(red: CGFloat(Double(arc4random()%255)/255.0), green: CGFloat(Double(arc4random()%255)/255.0), blue: CGFloat(Double(arc4random()%255)/255.0), alpha: CGFloat(0.5))
+            view.decelerationRate = 0.0
+            
+            self.calendarView.addSubview(view)
+        }
         
         self.view.addSubview(self.calendarView)
-        self.view.addSubview(view)
     }
 }

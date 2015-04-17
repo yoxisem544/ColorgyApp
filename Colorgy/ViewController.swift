@@ -132,7 +132,7 @@ class ViewController: JSQMessagesViewController {
         let b = CGFloat(Float(rgbValue & 0xFF)/255.0)
         let color = UIColor(red: r, green: g, blue: b, alpha: 0.5)
         
-        let nameLength = countElements(name)
+        let nameLength = count(name)
         let initials: String? = name.substringFromIndex(advance(senderId.startIndex, min(3, nameLength)))
         let userImage = JSQMessagesAvatarImageFactory.avatarImageWithUserInitials(initials, backgroundColor: color, textColor: UIColor.blackColor(), font: UIFont.systemFontOfSize(13), diameter: diameter)
         
@@ -150,7 +150,7 @@ class ViewController: JSQMessagesViewController {
         // user infos
         //        self.senderId = "DavidLIN"
         println(self.loginUserName)
-        self.senderId = self.loginUserName
+        self.senderId = self.loginUserName as String
         self.senderDisplayName = "David Lin"
         
         // setup messages
@@ -181,7 +181,7 @@ class ViewController: JSQMessagesViewController {
         setupAvatarImage(self.userNickName, avatarImageUrl: self.userAvatarUrl, incoming: false, isAnony: self.isAnony, anonyAvatar: self.anonyAvatar)
         
         self.setupFirebase()
-        self.navigationItem.title = self.fireBaseUrl
+        self.navigationItem.title = self.fireBaseUrl as String
         
         //setup contextsheet
         //        self.autoRecieveMessage()
@@ -191,13 +191,6 @@ class ViewController: JSQMessagesViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         collectionView.collectionViewLayout.springinessEnabled = true
-        
-        // testing
-        var panGes: UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: "popUpFunction:")
-        self.inputToolbar.contentView.leftBarButtonItem.addGestureRecognizer(panGes)
-        
-        var longPress: UIGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "longPress:")
-        self.collectionView.addGestureRecognizer(longPress)
     }
     
     
@@ -269,7 +262,7 @@ class ViewController: JSQMessagesViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as JSQMessagesCollectionViewCell
+        let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath) as! JSQMessagesCollectionViewCell
         
         let message = messages[indexPath.item]
         if message.senderId() == senderId {

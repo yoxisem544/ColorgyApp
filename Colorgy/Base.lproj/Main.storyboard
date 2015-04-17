@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o6Z-Yy-ZhG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nU6-P9-c1h">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -20,7 +20,7 @@
             </objects>
             <point key="canvasLocation" x="-521" y="-502"/>
         </scene>
-        <!--Calendar View Controller-->
+        <!--Item-->
         <scene sceneID="4uW-u3-43V">
             <objects>
                 <viewController id="o6Z-Yy-ZhG" customClass="CalendarViewController" customModule="Colorgy" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,10 +33,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="wMk-S1-KPE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSe-6t-JXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-187" y="220"/>
+            <point key="canvasLocation" x="1011" y="280"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="3TJ-cT-p6s">
@@ -53,14 +54,34 @@
                     </view>
                     <navigationItem key="navigationItem" id="rvz-3m-zNt"/>
                     <connections>
-                        <segue destination="tTP-ZE-VRB" kind="push" identifier="toChatSelect" id="ky8-2a-lqf"/>
+                        <segue destination="Pdc-j1-Ffb" kind="push" identifier="toChatSelect" id="xtA-MS-C9Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T7M-iN-Bc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="161" y="-512"/>
         </scene>
-        <!--Chat Room View Controller-->
+        <!--Service Tab View Controller-->
+        <scene sceneID="EoF-Zo-ZSF">
+            <objects>
+                <tabBarController id="Pdc-j1-Ffb" customClass="ServiceTabViewController" customModule="Colorgy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HHx-N3-peV"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="X6y-RQ-Jrn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tTP-ZE-VRB" kind="relationship" relationship="viewControllers" id="rIy-cJ-7Yo"/>
+                        <segue destination="o6Z-Yy-ZhG" kind="relationship" relationship="viewControllers" id="Bs4-p5-Ous"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zkz-ga-z8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="280"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="F5y-Q1-Cjx">
             <objects>
                 <tableViewController id="tTP-ZE-VRB" customClass="ChatRoomViewController" customModule="Colorgy" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,6 +102,7 @@
                             <outlet property="delegate" destination="tTP-ZE-VRB" id="JGH-Zg-c2x"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="2FG-TD-wCM"/>
                     <navigationItem key="navigationItem" id="hXJ-db-I0S"/>
                     <connections>
                         <outlet property="tableview" destination="aID-6q-mcl" id="Nos-Jl-Qgl"/>
@@ -89,7 +111,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsT-qB-8wQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="-476"/>
+            <point key="canvasLocation" x="933" y="-512"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -108,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="275"/>
+            <point key="canvasLocation" x="1704" y="-512"/>
         </scene>
     </scenes>
 </document>

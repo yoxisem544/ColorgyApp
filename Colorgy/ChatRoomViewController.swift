@@ -56,6 +56,8 @@ class ChatRoomViewController: UITableViewController, UITableViewDelegate, UITabl
         self.tableview.dataSource = self
         
         self.setupChatRoom()
+        
+        self.navigationController?.navigationBarHidden = true
     }
     
     func rightBarItemClicked() {
@@ -83,7 +85,7 @@ class ChatRoomViewController: UITableViewController, UITableViewDelegate, UITabl
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "goChatRoom" {
-            var vc: ViewController = segue.destinationViewController as ViewController
+            var vc: ViewController = segue.destinationViewController as! ViewController
             vc.setupFireBaseLinkUrl(self.chatRoom, userId: self.userId)
         }
     }
