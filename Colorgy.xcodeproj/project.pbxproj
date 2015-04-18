@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B42BD54C07B3B1592F5E37B /* libPods-Colorgy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC0F937DD2ECDBDEB64D28 /* libPods-Colorgy.a */; };
 		632655521ADE8C5800C5FEA9 /* ServiceTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632655511ADE8C5800C5FEA9 /* ServiceTabViewController.swift */; };
+		63DE5A571AE223DF004350DB /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE5A561AE223DF004350DB /* TimeTableViewController.swift */; };
 		63E0A2841AD2971200FF98BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2831AD2971200FF98BC /* AppDelegate.swift */; };
 		63E0A2861AD2971200FF98BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2851AD2971200FF98BC /* ViewController.swift */; };
 		63E0A2891AD2971200FF98BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E0A2871AD2971200FF98BC /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		4E12E18035215DEF176F2F83 /* libPods-ColorgyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorgyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632655511ADE8C5800C5FEA9 /* ServiceTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTabViewController.swift; sourceTree = "<group>"; };
+		63DE5A561AE223DF004350DB /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		63E0A27E1AD2971200FF98BC /* Colorgy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorgy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E0A2821AD2971200FF98BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E0A2831AD2971200FF98BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				63E0A2A31AD298E100FF98BC /* Message.swift */,
 				63E0A32E1AD3CC5C00FF98BC /* FBLoginViewController.swift */,
 				63E0A2871AD2971200FF98BC /* Main.storyboard */,
+				63DE5A561AE223DF004350DB /* TimeTableViewController.swift */,
 				63E0A3661AD5866800FF98BC /* CalendarViewController.swift */,
 				63E0A3301AD3CD8900FF98BC /* ChatRoomViewController.swift */,
 				63E0A28A1AD2971200FF98BC /* Images.xcassets */,
@@ -349,6 +352,7 @@
 				63E0A2A41AD298E100FF98BC /* Message.swift in Sources */,
 				63E0A2861AD2971200FF98BC /* ViewController.swift in Sources */,
 				63E0A32F1AD3CC5C00FF98BC /* FBLoginViewController.swift in Sources */,
+				63DE5A571AE223DF004350DB /* TimeTableViewController.swift in Sources */,
 				63E0A2841AD2971200FF98BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
