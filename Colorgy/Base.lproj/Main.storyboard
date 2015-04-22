@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nU6-P9-c1h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nU6-P9-c1h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -23,7 +23,7 @@
         <!--Item-->
         <scene sceneID="4uW-u3-43V">
             <objects>
-                <viewController id="o6Z-Yy-ZhG" customClass="TimeTableViewController" customModule="Colorgy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="o6Z-Yy-ZhG" customClass="WeekTimeTableViewController" customModule="Colorgy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X27-D2-xCL"/>
                         <viewControllerLayoutGuide type="bottom" id="33t-FK-baC"/>
@@ -73,8 +73,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="tTP-ZE-VRB" kind="relationship" relationship="viewControllers" id="rIy-cJ-7Yo"/>
                         <segue destination="o6Z-Yy-ZhG" kind="relationship" relationship="viewControllers" id="Bs4-p5-Ous"/>
+                        <segue destination="tTP-ZE-VRB" kind="relationship" relationship="viewControllers" id="rIy-cJ-7Yo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zkz-ga-z8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>

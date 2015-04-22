@@ -15,6 +15,16 @@ class ServiceTabViewController: UITabBarController {
 
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBarHidden = true
+        
+        var timetable = self.tabBar.items![0] as! UITabBarItem
+        timetable.image = UIImage(named: "timetable")
+        timetable.selectedImage = UIImage(named: "timetable")
+        timetable.title = "Timetable"
+        
+        var chat = self.tabBar.items![1] as! UITabBarItem
+        chat.image = UIImage(named: "chat")
+        chat.selectedImage = UIImage(named: "chat")
+        chat.title = "Chat"
     }
 
     override func didReceiveMemoryWarning() {
