@@ -16,6 +16,12 @@ class WeekTimeTableViewController: UIViewController {
     var headerBarCellWidth: CGFloat!
     var headerBarCellHeight: CGFloat!
     
+    // content container
+    var contentContainerViewWidth: CGFloat!
+    var contentContainerViewHeight: CGFloat!
+    var contentContainerContentWidth: CGFloat!
+    var contentContainerContentHeight: CGFloat!
+    
     // side bar region
     var sideBarHeight: CGFloat!
     var sideBarWidth: CGFloat!
@@ -53,22 +59,32 @@ class WeekTimeTableViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.screenHeight = self.view.frame.height
         self.screenWidth = self.view.frame.width
-        
+
         // header bar setup
         self.headerBarHeight = 64.0
         self.headerBarWidth = self.screenWidth
         
+        // content container setup
+        self.contentContainerViewHeight = self.screenHeight - self.headerBarHeight - 49
+        self.contentContainerViewWidth = self.headerBarWidth
+        
         // side bar setup
         self.sideBarWidth = 40.0
-        self.sideBarHeight = self.screenHeight - self.headerBarHeight - 49
         
         // setup header cell item
         self.headerBarCellHeight = 30.0
         self.headerBarCellWidth = (self.screenWidth - self.sideBarWidth)/5
         
         // setup side bar cell item
-        self.sideBarCellHeight = self.sideBarHeight/CGFloat(self.courseCount)
+        self.sideBarCellHeight = 100
         self.sideBarCellWidth = self.sideBarWidth
+        
+        // content container content size
+        self.contentContainerContentHeight = self.sideBarCellHeight * CGFloat(self.courseCount)
+        self.contentContainerContentWidth = self.screenWidth
+        
+        // after setting up content container size, set sidebar height
+        self.sideBarHeight = self.contentContainerContentHeight
         
         // grid view height and width
         self.gridTimeTableWidth = self.screenWidth - self.sideBarWidth
@@ -90,8 +106,9 @@ class WeekTimeTableViewController: UIViewController {
         
         // adding views to user
         self.view.addSubview(self.HeaderBarView())
-        self.view.addSubview(self.SideBarView())
-        self.view.addSubview(self.GridLineView())
+//        self.view.addSubview(self.SideBarView())
+//        self.view.addSubview(self.GridLineView())
+        self.view.addSubview(self.contentContainerView())
     }
     
     
@@ -121,9 +138,20 @@ class WeekTimeTableViewController: UIViewController {
         return view as UIView
     }
     
+    func contentContainerView() -> UIScrollView {
+        
+        var view = UIScrollView(frame: CGRectMake(0.0, self.headerBarHeight, self.contentContainerViewWidth, self.contentContainerViewHeight))
+        view.contentSize = CGSizeMake(self.contentContainerContentWidth, self.contentContainerContentHeight)
+        
+        view.addSubview(self.SideBarView())
+        view.addSubview(self.GridLineView())
+        
+        return view as UIScrollView
+    }
+    
     func SideBarView() -> UIView {
         
-        var view = UIView(frame: CGRectMake(0.0, self.headerBarHeight, self.sideBarWidth, self.sideBarHeight))
+        var view = UIView(frame: CGRectMake(0.0, 0.0, self.sideBarWidth, self.sideBarHeight))
         view.backgroundColor = self.sideBarColor
         
         // classes in moring NTU got 0 at the very first class
@@ -149,7 +177,7 @@ class WeekTimeTableViewController: UIViewController {
     
     func GridLineView() -> UIView {
         
-        var view = UIView(frame: CGRectMake(self.sideBarWidth, self.headerBarHeight, self.gridTimeTableWidth, self.gridTimeTableHeight))
+        var view = UIView(frame: CGRectMake(self.sideBarWidth, 0.0, self.gridTimeTableWidth, self.gridTimeTableHeight))
         view.backgroundColor = self.girdLineViewColor
         
         for day in 1...4 {

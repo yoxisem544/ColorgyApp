@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5B42BD54C07B3B1592F5E37B /* libPods-Colorgy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC0F937DD2ECDBDEB64D28 /* libPods-Colorgy.a */; };
-		630A0A6B1AE7E98B00415E28 /* WeekTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630A0A6A1AE7E98B00415E28 /* WeekTimeTableViewController.swift */; };
 		630A0A6E1AE7EA5700415E28 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 630A0A6C1AE7EA5600415E28 /* back.png */; };
 		630A0A6F1AE7EA5700415E28 /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 630A0A6D1AE7EA5700415E28 /* back2.png */; };
+		630A0A711AE7F66700415E28 /* WeekTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630A0A701AE7F66700415E28 /* WeekTimeTableViewController.swift */; };
 		632655521ADE8C5800C5FEA9 /* ServiceTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632655511ADE8C5800C5FEA9 /* ServiceTabViewController.swift */; };
 		63DE5A571AE223DF004350DB /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE5A561AE223DF004350DB /* TimeTableViewController.swift */; };
 		63E0A2841AD2971200FF98BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0A2831AD2971200FF98BC /* AppDelegate.swift */; };
@@ -42,9 +42,9 @@
 
 /* Begin PBXFileReference section */
 		4E12E18035215DEF176F2F83 /* libPods-ColorgyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorgyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		630A0A6A1AE7E98B00415E28 /* WeekTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekTimeTableViewController.swift; sourceTree = "<group>"; };
 		630A0A6C1AE7EA5600415E28 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		630A0A6D1AE7EA5700415E28 /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
+		630A0A701AE7F66700415E28 /* WeekTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekTimeTableViewController.swift; sourceTree = "<group>"; };
 		632655511ADE8C5800C5FEA9 /* ServiceTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTabViewController.swift; sourceTree = "<group>"; };
 		63DE5A561AE223DF004350DB /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		63E0A27E1AD2971200FF98BC /* Colorgy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorgy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +130,7 @@
 				63DE5A561AE223DF004350DB /* TimeTableViewController.swift */,
 				63E0A3661AD5866800FF98BC /* CalendarViewController.swift */,
 				63E0A3301AD3CD8900FF98BC /* ChatRoomViewController.swift */,
-				630A0A6A1AE7E98B00415E28 /* WeekTimeTableViewController.swift */,
+				630A0A701AE7F66700415E28 /* WeekTimeTableViewController.swift */,
 				63E0A28A1AD2971200FF98BC /* Images.xcassets */,
 				63E0A28C1AD2971200FF98BC /* LaunchScreen.xib */,
 				63E0A2811AD2971200FF98BC /* Supporting Files */,
@@ -361,7 +361,7 @@
 				63E0A3671AD5866800FF98BC /* CalendarViewController.swift in Sources */,
 				63E0A3311AD3CD8900FF98BC /* ChatRoomViewController.swift in Sources */,
 				63E0A2A41AD298E100FF98BC /* Message.swift in Sources */,
-				630A0A6B1AE7E98B00415E28 /* WeekTimeTableViewController.swift in Sources */,
+				630A0A711AE7F66700415E28 /* WeekTimeTableViewController.swift in Sources */,
 				63E0A2861AD2971200FF98BC /* ViewController.swift in Sources */,
 				63E0A32F1AD3CC5C00FF98BC /* FBLoginViewController.swift in Sources */,
 				63DE5A571AE223DF004350DB /* TimeTableViewController.swift in Sources */,
@@ -492,7 +492,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lin Li-Ying (NFF58M6TTS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lin Li-Ying (NFF58M6TTS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -501,7 +501,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2e4bae93-c4aa-4262-988a-1961c6fb20c3";
+				PROVISIONING_PROFILE = "4bc4b3b9-16ce-4afd-a7cc-ae3c6e1da988";
 				SWIFT_OBJC_BRIDGING_HEADER = ./Header.h;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -515,7 +515,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lin Li-Ying (NFF58M6TTS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lin Li-Ying (NFF58M6TTS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -524,7 +524,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2e4bae93-c4aa-4262-988a-1961c6fb20c3";
+				PROVISIONING_PROFILE = "4bc4b3b9-16ce-4afd-a7cc-ae3c6e1da988";
 				SWIFT_OBJC_BRIDGING_HEADER = ./Header.h;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
